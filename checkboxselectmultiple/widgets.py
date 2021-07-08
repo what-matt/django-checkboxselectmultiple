@@ -18,4 +18,4 @@ class CheckboxSelectMultiple(forms.SelectMultiple):
         if attrs is None:
             attrs = {}
         attrs['data-checkboxselect'] = True
-        return super(CheckboxSelectMultiple, self).render(name, value, attrs, choices)
+        return super(CheckboxSelectMultiple, self).render(name, value, attrs, choices, renderer=None)
